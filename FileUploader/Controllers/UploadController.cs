@@ -45,7 +45,7 @@ namespace FileUploader.Controllers
             using var stream = new FileStream(path, FileMode.Create);
             file.CopyTo(stream);
 
-            return Ok(_options.HostUrl, filename));
+            return Ok(Path.Combine(_options.HostUrl, filename));
         }
     }
 }
