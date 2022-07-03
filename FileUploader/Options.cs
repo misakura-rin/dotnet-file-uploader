@@ -3,8 +3,8 @@
     public interface IOptions
     {
         string Token { get; }
-        string OutputDir { get; set; }
-        IEnumerable<string> AllowedFileExtensions { get; set; }
+        string OutputDir { get; }
+        IEnumerable<string> AllowedFileExtensions { get; }
         string HostUrl { get; }
     }
 

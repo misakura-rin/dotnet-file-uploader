@@ -2,6 +2,8 @@ using FileUploader;
 
 var builder = WebApplication.CreateBuilder(args);
 
+Console.WriteLine("this is a test lmao");
+
 // Add services to the container.
 
 builder.Services.AddControllers();
