@@ -38,14 +38,14 @@ namespace FileUploader.Controllers
                 return StatusCode(StatusCodes.Status403Forbidden);
             }
 
-            var filename = Guid.NewGuid().ToString().Replace("-", "") +  extension;
+            var filename = Guid.NewGuid().ToString().Replace("-", "") + extension;
 
             var path = Path.Combine(_options.OutputDir, filename);
 
             using var stream = new FileStream(path, FileMode.Create);
             file.CopyTo(stream);
 
-            return Ok(Path.Combine(Request.Host.Host, path));
+            return Ok(_options.HostUrl, filename));
         }
     }
 }

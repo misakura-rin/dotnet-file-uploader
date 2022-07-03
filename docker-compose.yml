@@ -9,5 +9,6 @@ services:
       API_TOKEN: $API_TOKEN
       OUTPUT_DIR: /var/data
       ALLOWED_FILE_EXTENSIONS: $ALLOWED_FILE_EXTENSIONS
+      HOST_URL: $HOST_URL
     volumes:
-      - /mnt/disk6/appdata/swag/mayaya.moe:/var/data
+      - /mnt/disk6/appdata/swag/mayaya.moe/s:/var/data
