@@ -4,7 +4,8 @@ services:
     build: .
     restart: always
     ports:
-      - "5080:80"
+      - 5080:80
+      - 5443:443
     environment:
       API_TOKEN: $API_TOKEN
       OUTPUT_DIR: $OUTPUT_DIR
