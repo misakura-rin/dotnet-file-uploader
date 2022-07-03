@@ -7,7 +7,7 @@ services:
       - 5080:80
     environment:
       API_TOKEN: $API_TOKEN
-      OUTPUT_DIR: $OUTPUT_DIR
+      OUTPUT_DIR:"/var/data"
       ALLOWED_FILE_EXTENSIONS: $ALLOWED_FILE_EXTENSIONS
   volumes:
-    - /mnt/disk6/appdata/swag/mayaya.moe:$OUTPUT_DIR
+    - /mnt/disk6/appdata/swag/mayaya.moe:/var/data
