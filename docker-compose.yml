@@ -10,4 +10,4 @@ services:
       OUTPUT_DIR: $OUTPUT_DIR
       ALLOWED_FILE_EXTENSIONS: $ALLOWED_FILE_EXTENSIONS
   volumes:
-    - $HOST_DIR:$OUTPUT_DIR
+    - /mnt/disk6/appdata/swag/mayaya.moe:$OUTPUT_DIR
